@@ -1,0 +1,1 @@
+console.log("Cookie Monster content script loaded.");

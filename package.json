@@ -1,0 +1,30 @@
+{
+  "name": "cookie-monster",
+  "version": "1.0.0",
+  "description": "A Chrome extension that clears cookies and storage for specified websites when a tab is closed.",
+  "main": "src/background.ts",
+  "scripts": {
+    "build": "rm -rf  dist && npx tsc && npm run copy-static",
+    "copy-static": "cpx \"src/**/*.html\" dist && cpx \"src/**/*.css\" dist && cpx manifest.json dist && cpx \"icons/**/*\" dist/icons",
+    "watch": "tsc --watch",
+    "lint": "eslint .",
+    "start": "web-ext run",
+    "package": "npm run build && web-ext build --source-dir dist --artifacts-dir release --overwrite-dest"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "cookies",
+    "storage",
+    "cleaner"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.1.22",
+    "cpx": "^1.5.0",
+    "eslint": "^7.0.0",
+    "typescript": "^4.9.5",
+    "web-ext": "^6.0.0"
+  }
+}
