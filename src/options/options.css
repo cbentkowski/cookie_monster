@@ -5,6 +5,19 @@ body {
     margin: 0 auto;
     background-color: #f4f4f9;
     color: #333;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -40,10 +53,11 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
+th,
+td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
