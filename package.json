@@ -1,6 +1,6 @@
 {
   "name": "cookie-monster",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Chrome extension that clears cookies and storage for specified websites when a tab is closed.",
   "main": "src/background.ts",
   "scripts": {
