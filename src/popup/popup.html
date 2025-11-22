@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Monster</title>
     <link rel="stylesheet" href="popup.css">
 </head>
+
 <body>
     <div id="container">
-        <h1>Cookie Cleaner</h1>
+        <img src="../icons/icon128.png" alt="Cookie Monster Logo" class="logo">
+        <h1>Cookie Monster</h1>
         <p>Manage your websites:</p>
         <input type="text" id="website-input" placeholder="Enter website (e.g. example.com)" />
         <button id="add-website">Add Website</button>
-        <ul id="website-list"></ul>
+        <table id="website-table">
+            <thead>
+                <tr>
+                    <th>Website</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="website-list"></tbody>
+        </table>
+        <div id="pagination">
+            <button id="prev-page" disabled>Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-page" disabled>Next</button>
+        </div>
         <button id="clear-storage">Clear Storage</button>
     </div>
-    <script type="module"src="popup.js"></script>
+    <script type="module" src="popup.js"></script>
 </body>
+
 </html>
