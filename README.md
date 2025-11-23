@@ -1,4 +1,4 @@
-# Chrome Extension Cookie Cleaner
+# Chrome Extension Cookie Monster
 
 This Chrome extension automatically clears cookies and storage for a specified list of websites whenever a tab is closed. It provides a user-friendly interface for managing the list of websites.
 
