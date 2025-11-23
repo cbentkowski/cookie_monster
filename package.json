@@ -18,7 +18,7 @@
     "storage",
     "cleaner"
   ],
-  "author": "Your Name",
+  "author": "Chris Bentkowski",
   "license": "MIT",
   "devDependencies": {
     "@types/chrome": "^0.1.22",
